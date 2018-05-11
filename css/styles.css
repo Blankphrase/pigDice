@@ -1,0 +1,10 @@
+header {
+  background-color: black;
+  color: red;
+  font-family: 'Damion';
+  text-align: center;
+  font-weight: bold;
+}
+.container-fluid {
+  background-color: black;
+}
