@@ -1,10 +1,30 @@
-header {
-  background-color: black;
-  color: red;
-  font-family: 'Damion';
+#header {
+  font-family: 'VT323';
   text-align: center;
-  font-weight: bold;
+  font-weight: normal;
+  font-size: 100px;
 }
-.container-fluid {
-  background-color: black;
+.container {
+  background-color: rgba(128, 0, 0, 0.4);
+  padding-left: 0px;
+}
+body {
+  background-color: rgba(308, 86, 0, 0.1)
+}
+.welcome {
+  background-color: rgba(308, 86, 86, 0.6);
+}
+h4 {
+  text-align: center;
+  font-family: 'Damion';
+}
+.instruction {
+  text-align: center;
+}
+#list {
+  padding-left: 200px;
+  padding-right: 100px;
+}
+.row {
+  margin-left: 0px;
 }
