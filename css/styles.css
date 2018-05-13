@@ -25,9 +25,15 @@ h4 {
   padding-left: 200px;
   padding-right: 100px;
 }
-.row {
+.list {
   margin-left: 0px;
 }
+#player {
+  width: 350px;
+}
+#opponent {
+  width: 350px;
+}
 #form {
-  text-align: center;
+  margin-left: 100px;
 }

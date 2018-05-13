@@ -2,12 +2,14 @@
 
   <html>
     <head>
-      <title>PIGDICE</title>
       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Righteous|Tangerine|Damion|VT323" rel="stylesheet">
       <link href="css/styles.css" rel="stylesheet">
+      <script src="js/jquery-3.3.1.js"></script>
+      <script src="js/scripts.js"></script>
+      <title>PIGDICE</title>
     </head>
     <body>
       <div class="container">
@@ -16,9 +18,9 @@
         <br>
         <br>
         <div class="container welcome">
-          <h1>RulAes of pigdice</h4>
+          <h4>Rules of pigdice</h4>
           <p class="instruction">Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to 'hold':</p>
-          <div class="row" id="list">
+          <div class="row list" id="list">
             <ul>
               <li>If the player rolls a 1, they score nothing and it becomes the next player's turn</li>
               <li>If the player rolls any other number, it is added to their turn total and the player's turn continues</li>
@@ -36,11 +38,44 @@
       <form id="form">
         <div class="form-group">
           <label>Player</label>
-          <input placeholder="player 1" type="text">
+          <input placeholder="player 1 name" type="text" value="" id="player">
         </div>
+        <p><h1>vs</h1></p>
         <div class="form-group">
           <label>Opponent</label>
-          <input placeholder="player 2" type="text">
+          <input placeholder="player 2 name" type="text" value="" id="opponent">
         </div>
-        <button>Sign up</button>
+        <br>
+        <button id="sign" class="btn btn-info">Sign up</button>
       </form>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Player: <span id="playerOutput"></span></h1>
+            <div>
+              <button id="playerTurn" class="btn btn-success">Roll</button>
+              <h3>Dice Roll: <span id="diceRoll"></span></h3>
+              <h3>Score: <span id="score"></span></h3>
+            </div>
+            <div>
+              <button id="playerPause" class="btn btn-success">Hold</button>
+              <h3>Total: <span id="total"></span></h3>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h1>Opponent: <span id="opponentOutput"></span></h1>
+            <div>
+              <button id="opponentTurn" class="btn btn-danger">Roll</button>
+              <h3>Dice Roll: <span id="diceRoll2"></span></h3>
+              <h3>Score: <span id="score2"></span></h3>
+            </div>
+            <div>
+              <button id="opponentPause" class="btn btn-danger">Hold</button>
+              <h3>Total: <span id="total2"></span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="restart" class="btn btn-info">Restart</button>
+    </body>
+  </html>
