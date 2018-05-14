@@ -8,6 +8,9 @@
   background-color: rgba(128, 0, 0, 0.4);
   padding-left: 0px;
 }
+.rules {
+  background-image: url("../image/swsa-footer-art-zurn.png");
+}
 body {
   background-color: rgba(308, 86, 0, 0.1)
 }
@@ -41,6 +44,5 @@ h4 {
   margin-left: 600px;
 }
 body {
-  background-image: url("../image/swsa-footer-art-zurn.png");
   font-weight: bold;
 }
