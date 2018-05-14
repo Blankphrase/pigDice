@@ -105,11 +105,13 @@ $(document).ready(function() {
     $("#total").empty();
     $("#total2").empty();
   });
-  $("button#restart").click(function() {
-    $("input#player").empty();
-    $("input#opponent").empty();
+  $("button#newGame").click(function() {
+    $("input#player").val("");
+    $("input#opponent").val("");
     player.game();
     opponent.game();
+    $("#playerOutput").empty();
+    $("#opponentOutput").empty();
     $("#diceRoll").empty();
     $("#diceRoll2").empty();
     $("#score").empty();
