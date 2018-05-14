@@ -40,3 +40,7 @@ h4 {
 #newGame {
   margin-left: 600px;
 }
+body {
+  background-image: url("../image/swsa-footer-art-zurn.png");
+  font-weight: bold;
+}
