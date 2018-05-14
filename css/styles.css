@@ -8,6 +8,9 @@
   background-color: rgba(128, 0, 0, 0.4);
   padding-left: 0px;
 }
+.rules {
+  background-image: url("../image/swsa-footer-art-zurn.png");
+}
 body {
   background-color: rgba(308, 86, 0, 0.1)
 }
@@ -39,4 +42,7 @@ h4 {
 }
 #newGame {
   margin-left: 600px;
+}
+body {
+  font-weight: bold;
 }
